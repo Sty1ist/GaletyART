@@ -8,9 +8,46 @@ body {
   font-family: "Muli", sans-serif;
   overflow: hidden;
   margin: 0;
-  background: url("img/1.jpg") center;
+  background: url("img/3.jpg");
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  position: relative;
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.slide.active {
+  flex: 10;
+}
