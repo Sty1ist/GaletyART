@@ -1,7 +1,7 @@
-function slidesPlugin() {
+function slidesPlugin(activeSlide = 0) {
     const slides = document.querySelectorAll('.slide')
 
-    slides[2].classList.add('active')
+    slides[activeSlide].classList.add('active')
 
     for (const slide of slides) {
         slide.addEventListener('click', () => {
