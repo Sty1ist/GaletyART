@@ -7,7 +7,7 @@ body {
     font-family: "Muli", sans-serif;
     overflow: hidden;
     margin: 0;
-    background: rgb(131, 131, 102);
+    background: rgba(2, 31, 36, 0.739);
     height: 100vh;
     display: flex;
     justify-content: center;
